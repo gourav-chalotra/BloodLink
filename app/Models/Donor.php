@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Donor extends Model
 {
     use HasFactory;
-    protected $table = "needers";
+    protected $table = "donors";
     protected $primaryKey = "phone";
 }
-// Work start from here.
