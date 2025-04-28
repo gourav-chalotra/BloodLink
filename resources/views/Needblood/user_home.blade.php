@@ -135,15 +135,6 @@
                 <a href="#" class="block py-3 px-6 text-lg font-medium hover:text-white">
                     <i class="fas fa-home mr-2"></i> Dashboard
                 </a>
-                <a href="#" class="block py-3 px-6 text-lg font-medium hover:text-white">
-                    <i class="fas fa-hand-holding-heart mr-2"></i> Request Blood
-                </a>
-                <a href="#" class="block py-3 px-6 text-lg font-medium hover:text-white">
-                    <i class="fas fa-history mr-2"></i> Donation History
-                </a>
-                <a href="#" class="block py-3 px-6 text-lg font-medium hover:text-white">
-                    <i class="fas fa-user mr-2"></i> Profile
-                </a>
                 <form action="{{ route('logout') }}" method="POST" class="mt-4">
                     @csrf
                     <button type="submit" class="block w-full py-3 px-6 text-lg font-medium text-white hover:text-white hover:bg-opacity-80 focus:outline-none">

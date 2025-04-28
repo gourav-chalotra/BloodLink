@@ -24,8 +24,6 @@ Route::post('/logout', [NeedBloodController::class, 'logout'])->name('logout');
 // Donate Blood routes
 Route::get('/home/donateblood', [DonateBloodController::class, 'show'])->name('donate.show');
 Route::post('/home/donateblood', [DonateBloodController::class, 'store'])->name('donate.store');
-Route::get('/donate/verify/{phone}', [DonateBloodController::class, 'showVerifyForm'])->name('donate.verify');
-Route::post('/donate/verify/{phone}', [DonateBloodController::class, 'verify'])->name('donate.verify.post');
 Route::get('/donate/success', [DonateBloodController::class, 'success'])->name('donate.success');
 Route::get('/getdata',function(){
     $customers = User::all();

@@ -12,10 +12,9 @@ class CreateDonorsTable extends Migration
             $table->id();
             $table->string('username');
             $table->string('email');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('location');
             $table->string('blood_group');
-            $table->boolean('availability')->default(true);
             $table->timestamps();
         });
     }

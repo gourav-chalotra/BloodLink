@@ -12,14 +12,13 @@ class CreateNeedersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->integer('password');
+            $table->string('password');
             $table->string('phone');
             $table->text('location');
             $table->string('blood_group_needed');
             $table->timestamps();
         });
     }
-
     public function down()
     {
         Schema::dropIfExists('needers');

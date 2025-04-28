@@ -42,7 +42,7 @@ class NeedBloodController extends Controller
         session()->put('phone', $request->input('phone'));
         session()->put('location', $request->input('location'));
 
-        $donors = Donor::where('availability', 1)->get(['username', 'location', 'phone']);
+        $donors = Donor::get(['username', 'location', 'phone']);
         return view('Needblood.user_home', compact('donors'));
     }
 
