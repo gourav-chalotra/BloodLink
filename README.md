@@ -60,9 +60,12 @@ php artisan key:generate
 2. Open `.env` file and update these lines according to your database configuration:
 
 ```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=bloodlink
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 
 Run database migrations:
@@ -145,21 +148,6 @@ php artisan serve
 > The project will be available at:  
 > `http://localhost:8000`
 
----
-
-# Database Configuration .env
-
-```bash
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=bloodlink
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-
----
 
 # 📚 Summary of Commands
 
