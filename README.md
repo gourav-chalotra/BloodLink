@@ -30,11 +30,7 @@ Install PHP and Composer dependencies:
 composer install
 ```
 
-Install JavaScript dependencies:
 
-```bash
-npm install
-```
 
 ---
 
@@ -60,9 +56,12 @@ php artisan key:generate
 2. Open `.env` file and update these lines according to your database configuration:
 
 ```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=bloodlink
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 
 Run database migrations:
@@ -73,23 +72,11 @@ php artisan migrate
 
 ---
 
-## 🔥 Step 5: Compile Assets
 
-If you are in development mode:
-
-```bash
-npm run dev
-```
-
-For production build:
-
-```bash
-npm run build
-```
 
 ---
 
-## 🌍 Step 6: API Key Setup
+## 🌍 Step 5: API Key Setup
 
 Go to:
 
@@ -134,7 +121,7 @@ Example:
 
 
 
-## 🚀 Step 7: Run the Server
+## 🚀 Step 6: Run the Server
 
 Start the local development server:
 
@@ -145,21 +132,6 @@ php artisan serve
 > The project will be available at:  
 > `http://localhost:8000`
 
----
-
-# Database Configuration .env
-
-```bash
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=bloodlink
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-
----
 
 # 📚 Summary of Commands
 
@@ -182,10 +154,4 @@ php artisan serve
 - If any migration fails, make sure your database credentials are correct and database exists.
 - If you make changes in front-end (CSS/JS), remember to run:
 
-```bash
-npm run dev
-```
-again.
-- Make sure Node.js, npm, Composer, and PHP are installed on your system.
-- If `npm` gives issues, you may need to install Vite plugins (`vite`, `laravel-vite-plugin`).
 
