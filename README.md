@@ -156,8 +156,8 @@ php artisan serve
 
 # Screen Shorts
 
-<img src="https://raw.githubusercontent.com/gourav-chalotra/BloodLink/refs/heads/main/public/images/photo1.png" width="400"/>
-<img src="https://raw.githubusercontent.com/gourav-chalotra/BloodLink/refs/heads/main/public/images/photo2.png" width="400"/>
-<img src="https://raw.githubusercontent.com/gourav-chalotra/BloodLink/refs/heads/main/public/images/photo3.png" width="400"/>
+<img src="https://raw.githubusercontent.com/gourav-chalotra/BloodLink/refs/heads/main/public/images/photo1.png" width="900"/>
+<img src="https://raw.githubusercontent.com/gourav-chalotra/BloodLink/refs/heads/main/public/images/photo2.png" width="900"/>
+<img src="https://raw.githubusercontent.com/gourav-chalotra/BloodLink/refs/heads/main/public/images/photo3.png" width="900"/>
 
 
